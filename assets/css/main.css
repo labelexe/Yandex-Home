@@ -1,16 +1,13 @@
-body{
-    font-family: HelveticaNeue,Helvetica,Arial,sans-serif;
+body {
+    font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: #333333;
 }
-header{
+
+header {
     border-bottom: solid 2px #F0F0F0;
 }
-hr{
-    background-color: #f6f6f6;
-}
-
-nav.ya-n{
+nav.ya-n {
     font-family: Arial-BoldMT;
     display: -webkit-flex;
     display: -moz-flex;
@@ -19,48 +16,43 @@ nav.ya-n{
     margin: 0 2rem;
     align-items: center;
 }
-nav.ya-n > ul.ya-n-lt{  
+
+nav.ya-n > ul.ya-n-lt {
     display: flex;
     width: 100px;
     min-width: 100px;
     margin-right: 50px;
 }
-nav.ya-n > ul.ya-n-lt > img{
-    
-}
 
-nav.ya-n > ul.ya-n-lnk{
+nav.ya-n > ul.ya-n-lnk {
     display: -webkit-flex;
     display: -ms-flex;
     display: -moz-flex;
     display: flex;
 }
-nav.ya-n > ul.ya-n-lnk > li{
+
+nav.ya-n > ul.ya-n-lnk > li {
     margin: 0 0.8rem;
 }
 
-
-
-
-
-
-main{
+main {
     font-family: Arial-BoldMT;
     margin-top: 30px;
     margin: 30px 0 0 0;
-    /*! color: #ffeaea; */
+  /*! color: #ffeaea; */
 }
-main > .row-ctr{
+
+main > .row-ctr {
     display: flex;
     flex-flow: row wrap;
 }
 
-.wrap-main-widget{
-width: auto;
-height: auto;
+.wrap-main-widget {
+    width: auto;
+    height: auto;
 }
 
-.main-widget{
+.main-widget {
     background: url(https://unsplash.com/photos/ob-hsLNxYPc/download?force=true);
     margin: 20px 0;
     max-width: 660px;
@@ -74,80 +66,94 @@ height: auto;
     flex-flow: row wrap;
     height: auto;
 }
-main > div >  div > h5{
+
+main > div > div > h5 {
     margin-top: 30px;
     margin: 30px 0 0 0;
 }
-h2{
+
+h2 {
     font-family: Arial-BoldMT;
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 967px) {
+    .main-script {
+        margin: 0 !important;
+    }   
+}
+@media screen and (max-width: 400px) {
     nav.ya-n {
         padding: 15px 0;
     }
-    nav.ya-n > ul.ya-n-lnk{
+
+    nav.ya-n > ul.ya-n-lnk {
         display: none;
     }
 
     header {
         border-bottom: none;
     }
+
     main {
         font-family: Arial-BoldMT;
         margin-top: 0;
         margin: 0 0 0 0;
     }
-    .main-widget {
-        margin: 0 0!important;
-    }
-    main > .row-ctr{
+
+    main > .row-ctr {
         display: flex;
         flex-flow: column wrap;
     }
 
-    .main-widget > .main-widget-info > h2{
+    .main-widget > .main-widget-info > h2 {
         font-size: 18px!important;
         font-family: Arial-BoldMT;
-        margin-bottom: 5px; 
+        margin-bottom: 5px;
     }
-    
-    .main-widget > .main-widget-info > p{
+
+    .main-widget > .main-widget-info > p {
         font-size: 12px;
         font-family: ArialMT;
     }
-    main > div > div > h5{
-        display: none;
-    }
-    .main-widget > .main-widget-info >.main-widget-weather > .main-widget-weather-box > h1{
+  /* main > div > div > h5{
+                display: none;
+            } */
+    .main-widget > .main-widget-info > .main-widget-weather > .main-widget-weather-box > h1 {
         font-size: 24px;
     }
 
-    .main-widget-smart-device-list{
+    .main-widget-smart-device-list {
         display: flex;
         flex-flow: column wrap;
         margin: 0!important;
     }
 
+    .main-script {
+        margin: 0 !important;
+    }
 }
-p{
+
+p {
     font-family: ArialMT;
 }
 
-.main-widget > .main-widget-info >.main-widget-weather{
+.main-widget > .main-widget-info > .main-widget-weather {
     display: flex;
     flex-flow: row wrap;
     margin-top: 15px;
     margin: 15px 0 0 0;
 }
-.main-widget > .main-widget-info > .main-widget-weather > .main-widget-weather-box{
+
+.main-widget > .main-widget-info > .main-widget-weather > .main-widget-weather-box {
     margin-right: 18px;
     display: flex;
     flex-flow: column;
 }
-.main-widget > .main-widget-info > .main-widget-weather > .main-widget-weather-box > p{
+
+.main-widget > .main-widget-info > .main-widget-weather > .main-widget-weather-box > p {
     color: #858585;
 }
-.main-widget > .main-widget-info > .main-widget-weather > .main-widget-weather-box > img{
+
+.main-widget > .main-widget-info > .main-widget-weather > .main-widget-weather-box > img {
     width: 100%;
     max-width: 26px;
     max-height: 26px;
@@ -157,22 +163,25 @@ p{
     margin-bottom: auto;
     margin-left: 5px;
 }
-.main-widget-smart-device-list{
+
+.main-widget-smart-device-list {
     display: flex;
     flex-flow: column;
     margin: 26px 10px;
 }
-.main-widget-smart-device-list > .main-widget-smart-device-box{
+
+.main-widget-smart-device-list > .main-widget-smart-device-box {
     background-color: #F7F7F7;
     padding: 15px;
     border-radius: 10px;
     width: auto;
     margin: 0 0 15px 0;
 }
-.main-widget-smart-device-list > .main-widget-smart-device-box > img{
+
+.main-widget-smart-device-list > .main-widget-smart-device-box > img {
     margin: 0 0 30px 0;
 }
 
-.main-script{
-margin: 25px;
+.main-script {
+    margin: 0 26px;
 }
